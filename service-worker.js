@@ -1,6 +1,15 @@
 const version = 1.2;
-const cacheName = `MyCacheName ${version}`;
-const filesToCache = ["offline.html", "assets/images/icon.png", "assets/images/offline.svg", "src/app.js", "src/app.css"];
+const cacheName = `Locator ${version}`;
+const onsenUI = [
+    'https://unpkg.com/onsenui@2.11.2/css/onsen-css-components.min.css',
+    'https://unpkg.com/onsenui@2.11.2/css/onsenui-core.min.css',
+    'https://unpkg.com/onsenui@2.11.2/css/onsenui.min.css',
+    'https://unpkg.com/onsenui@2.11.2/js/onsenui.min.js',
+    'https://unpkg.com/onsenui@2.11.2/css/material-design-iconic-font/css/material-design-iconic-font.min.css',
+    'https://unpkg.com/onsenui@2.11.2/css/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff2'
+];
+
+const filesToCache = ["offline.html", "assets/images/icon.png", "assets/images/offline.svg", "src/app.js", "src/app.css", ...onsenUI];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(cacheName).then(async (cache) => {
