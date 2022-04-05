@@ -1,7 +1,7 @@
 {
   "name": "Krunal Shah Locator",
   "short_name": "Locator",
-  "start_url": "https://kingstonkrunal.github.io/INFO-6128-Locator/",
+  "start_url": "https://dev.localhost:3001",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
