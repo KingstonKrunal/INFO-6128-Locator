@@ -36,3 +36,23 @@ p {
 img {
     width: 150px;
 }
+
+#map {
+    border: black 5px solid;
+    margin: 20px 10px;
+    height: 80%;
+}
+
+#buttonsDiv {
+    text-align: center;
+}
+
+#myLocation {
+    margin-top: 20px;
+    width: fit-content;
+}
+
+#clearAllMarkers {
+    margin-top: 10px;
+    width: fit-content;
+}

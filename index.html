@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
     <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
 
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
     <!-- CSS -->
     <link
             rel="stylesheet"
@@ -30,12 +32,14 @@
 </head>
 
 <body>
-<div id="map" style="width: 100%; height: 80%;"></div>
+<div id="map"></div>
 
-<ons-button modifier="large" disabled="true" id="clearAllMarkers">large</ons-button>
+<div id="buttonsDiv">
+    <ons-button id="myLocation">My Location</ons-button> <br>
+    <ons-button id="clearAllMarkers">Remove All Markers</ons-button>
+</div>
 </body>
 
-<script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
 <script
         src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
